@@ -1,0 +1,7 @@
+FROM nginx
+LABEL nginxv="latest"
+
+RUN echo "https://www.free-css.com/free-css-templates/page296/oxer" > /usr/share/nginx/html/index.html
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
